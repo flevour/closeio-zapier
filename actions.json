@@ -8,6 +8,17 @@
     "resource_url": "https://app.close.io/api/v1/lead/", 
     "custom_fields_url": "https://app.close.io/api/v1/custom_fields/lead/", 
     "fields": {
+      "status": {
+        "label": "Status", 
+        "required": false, 
+        "help_text": "Lead status. Lead statuses must be setup in your Organization Settings first before they will show up in this drop-down.\n\n", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": "lead_status.id.label", 
+        "send_in_json": true
+      }, 
       "name": {
         "label": "Company Name", 
         "required": false, 
@@ -78,17 +89,6 @@
         "label": "Phone", 
         "required": false, 
         "help_text": "Phone number (including country code)", 
-        "default": null, 
-        "choices": null, 
-        "sort": null, 
-        "type_of": "Unicode", 
-        "prefill": null, 
-        "send_in_json": true
-      }, 
-      "status": {
-        "label": "Status", 
-        "required": false, 
-        "help_text": "Lead status. Lead statuses must be setup in your Organization Settings first.\r\n\r\nYou can use a status label (e.g., \"Bad Fit\") or a status ID (e.g., \"stat_1ZdiZqcSIkoGVnNOyxiEY58eTGQmFNG3LPlEVQ4V7Nk\")\r\n\r\n", 
         "default": null, 
         "choices": null, 
         "sort": null, 
