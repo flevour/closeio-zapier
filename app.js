@@ -18,6 +18,45 @@ flatten_arrays = function(results) {
 };
 
 var Zap = {
+    task_pre_poll: function(bundle) {
+        var request = bundle.request;
+        console.log(bundle.trigger_fields);
+        if ('is_complete' in bundle.trigger_fields) {
+            console.log('found is_complete');
+            request.params.is_complete = bundle.trigger_fields.is_complete;
+        }
+        
+        return request;
+    },
+
+    all_users_pre_poll: function(bundle) {
+        var request = bundle.request;
+        var org_request = {
+          'method': 'GET',
+              'url': 'https://app.close.io/api/v1/me',
+              'params': {
+              },
+              'headers': {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              'auth': [bundle.auth_fields.api_key, '']
+        };
+        
+        var content = JSON.parse(z.request(org_request).content);
+        var org_id = content.memberships[0].organization_id;
+        
+        request.url = request.url + org_id;
+      
+        
+        return request;
+    },
+    
+    all_users_post_poll: function(bundle) {
+        var content = JSON.parse(bundle.response.content).memberships;
+        return content;
+    },
+
     opportunity_pre_poll: function(bundle) {
         request = bundle.request;
         if (bundle.trigger_fields.status_id) {
@@ -42,6 +81,20 @@ var Zap = {
     },
     lead_pre_poll: function(bundle) {
         request = bundle.request;
+        
+        if (bundle.trigger_fields.query) {
+            //attempt to remove the user's sort
+            query = bundle.trigger_fields.query;
+            var rex = /sort:/.exec(query);
+            if (rex) {
+                request.params.query = query.substring(0, rex.index + 5) + '-created,' + query.substring(rex.index + 5, query.length);
+            } else {
+                request.params.query = query + " sort:-created";
+            }
+        } else {
+            request.params.query = 'sort:-created';
+        }
+        
         /*if (bundle.trigger_fields.status_id) {
             request.params.status_id = bundle.trigger_fields.status_id;
         }
@@ -111,6 +164,31 @@ var Zap = {
            
         bundle.request.data = JSON.stringify(data);
         return bundle.request;
+    },
+    new_lead_post_write: function(bundle) {
+        fields = bundle.action_fields;
+        
+        content = JSON.parse(bundle.response.content);
+        
+        if (!content.id)
+            return;
+        
+        if (fields.note) {
+            var request = {
+              'method': 'POST',
+              'url': 'https://app.close.io/api/v1/activity/note/',
+              'params': {
+              },
+              'headers': {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              'auth': [bundle.auth_fields.api_key, ''],
+              'data': '{"note": "' + fields.note + '", "lead_id": "' + content.id + '"}'
+            };
+            z.request(request);
+        }
+        return;
     },
     new_lead_post_custom_action_fields: function(bundle) {
         content = JSON.parse(bundle.response.content);
