@@ -1,4 +1,18 @@
 {
+  "all_users": {
+    "label": "All Users", 
+    "help_text": "For dynamic dropdown", 
+    "noun": "User", 
+    "important": false, 
+    "hide": true, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.close.io/api/v1/organization/", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [], 
+    "fields": {}
+  }, 
   "lead": {
     "label": "New Lead", 
     "help_text": "Triggers when a new lead is added.", 
@@ -382,7 +396,18 @@
         "label": "Address Zipcode"
       }
     ], 
-    "fields": {}
+    "fields": {
+      "query": {
+        "label": "Query", 
+        "required": false, 
+        "help_text": "You can select a saved search from close.io, or type a custom search query in based on close.io [search syntax](https://help.close.io/customer/portal/articles/1564202-search-syntax).  All searches will be modified to include 'sort:-created' to allow Zapier deduplication to work.", 
+        "default": "sort:-created", 
+        "choices": null, 
+        "sort": null, 
+        "type": "Unicode", 
+        "prefill": "saved_search.query.name"
+      }
+    }
   }, 
   "lead_status": {
     "label": "Lead Status", 
@@ -531,10 +556,53 @@
       }
     }
   }, 
+  "saved_search": {
+    "label": "Saved Searches", 
+    "help_text": "For dynamic dropdown", 
+    "noun": "Search", 
+    "important": false, 
+    "hide": true, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.close.io/api/v1/saved_search/", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "bool", 
+        "key": "is_shared"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "query"
+      }, 
+      {
+        "type": "bool", 
+        "key": "used_recently"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "user_id"
+      }
+    ], 
+    "fields": {}
+  }, 
   "task": {
     "label": "New Task", 
     "help_text": "Triggers when a new task is created.", 
-    "noun": "", 
+    "noun": "Task", 
     "important": true, 
     "hide": false, 
     "data_source": "Polling", 
@@ -544,11 +612,80 @@
     "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
     "sample_result_fields": [
       {
+        "type": "unicode", 
+        "key": "assigned_to"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "assigned_to_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "due_date"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
         "type": "bool", 
-        "key": "has_more"
+        "key": "is_complete"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "text"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
       }
     ], 
-    "fields": {}
+    "fields": {
+      "user": {
+        "label": "Assigned To User", 
+        "required": false, 
+        "help_text": "Select a user, and only trigger on tasks assigned to that user.", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type": "Unicode", 
+        "prefill": "all_users.user_id.user_full_name"
+      }, 
+      "is_complete": {
+        "label": "Complete", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": "true|Complete,false|Incomplete", 
+        "sort": null, 
+        "type": "Boolean", 
+        "prefill": null
+      }
+    }
   }, 
   "user": {
     "label": "New User", 
