@@ -384,6 +384,29 @@
     ], 
     "fields": {}
   }, 
+  "lead_status": {
+    "label": "Lead Status", 
+    "help_text": "Dynamic Dropdown for org lead statuses", 
+    "noun": "Status", 
+    "important": false, 
+    "hide": true, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.close.io/api/v1/status/lead/", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "label"
+      }
+    ], 
+    "fields": {}
+  }, 
   "opportunity": {
     "label": "New Opportunity", 
     "help_text": "Triggers when a new opportunity is added.", 
