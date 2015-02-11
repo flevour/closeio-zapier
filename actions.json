@@ -172,6 +172,17 @@
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
+      }, 
+      "notes": {
+        "label": "Notes", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Textarea", 
+        "prefill": null, 
+        "send_in_json": true
       }
     }
   }
