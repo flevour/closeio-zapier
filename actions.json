@@ -1,0 +1,178 @@
+{
+  "new_lead": {
+    "label": "New Lead", 
+    "help_text": "Creates a new lead.", 
+    "noun": "", 
+    "important": true, 
+    "hide": false, 
+    "resource_url": "https://app.close.io/api/v1/lead/", 
+    "custom_fields_url": "https://app.close.io/api/v1/custom_fields/lead/", 
+    "fields": {
+      "name": {
+        "label": "Company Name", 
+        "required": false, 
+        "help_text": "Lead/ Company / Organization ", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "contact_name": {
+        "label": "Contact Name", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "contact_email": {
+        "label": "Contact Email", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "contact_title": {
+        "label": "Contact Title", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "url": {
+        "label": "URL", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "description": {
+        "label": "Description", 
+        "required": false, 
+        "help_text": "A description about the lead", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phone": {
+        "label": "Phone", 
+        "required": false, 
+        "help_text": "Phone number (including country code)", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "status": {
+        "label": "Status", 
+        "required": false, 
+        "help_text": "Lead status. Lead statuses must be setup in your Organization Settings first.\r\n\r\nYou can use a status label (e.g., \"Bad Fit\") or a status ID (e.g., \"stat_1ZdiZqcSIkoGVnNOyxiEY58eTGQmFNG3LPlEVQ4V7Nk\")\r\n\r\n", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "address_label": {
+        "label": "Address Label", 
+        "required": false, 
+        "help_text": "Type of address", 
+        "default": null, 
+        "choices": "business,mailing,other", 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "address_street_1": {
+        "label": "Address Street 1", 
+        "required": false, 
+        "help_text": "First part of the street address for an address (e.g., \"501 Forest Ave\")", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "address_street_2": {
+        "label": "Address Street 2", 
+        "required": false, 
+        "help_text": "Second part of a street address if necessary (e.g., \"Suite 410\")", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "address_city": {
+        "label": "Address City", 
+        "required": false, 
+        "help_text": "City name for an address (e.g., \"Palo Alto\")", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "address_state": {
+        "label": "Address State", 
+        "required": false, 
+        "help_text": "State (abbreviation, if in the U.S.). E.g., \"CA\"", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "address_zipcode": {
+        "label": "Address ZIP Code", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "address_country": {
+        "label": "Address Country", 
+        "required": false, 
+        "help_text": "Country abbreviation for an address. E.g., \"US\"", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }
+    }
+  }
+}
