@@ -1,0 +1,544 @@
+{
+  "lead": {
+    "label": "New Lead", 
+    "help_text": "Triggers when a new lead is added.", 
+    "noun": "", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.close.io/api/v1/lead/", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": null, 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "activities"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__is_new"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__search_attributes__note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__search_full_text"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "activity__user_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__date_updated"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "contact__email__email", 
+        "label": "Contact Email"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__email__email_lower"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__email__type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__emails"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__name", 
+        "label": "Contact Name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__phones"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__title", 
+        "label": "Contact Title"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact__updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "custom__fancy"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "description", 
+        "label": "Description"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "display_name", 
+        "label": "Display Name"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "html_url", 
+        "label": "Direct Link/URL"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "name", 
+        "label": "Name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__confidence"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__date_won"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__organization_id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "opportunity__status", 
+        "label": "Opportunity Status"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__user_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__user_name"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "opportunity__value", 
+        "label": "Opportunity Value"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunity__value_period"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "status", 
+        "label": "Status"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__assigned_to"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "task__assigned_to_name", 
+        "label": "Task Assigned To"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__due_date"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__is_complete"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__organization_id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "task__text", 
+        "label": "Task Text"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "task__updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "url"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "activity___type", 
+        "label": "Activity Type"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "activity__note", 
+        "label": "Activity Note"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "activity__search_attributes__note_by", 
+        "label": "Activity Note By"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address__address_1", 
+        "label": "Address Line 1"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address__address_2", 
+        "label": "Address Line 2"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address__city", 
+        "label": "Address City"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address__country", 
+        "label": "Address Country"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address__label", 
+        "label": "Address Label"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address__state", 
+        "label": "Address State"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "address__zipcode", 
+        "label": "Address Zipcode"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "opportunity": {
+    "label": "New Opportunity", 
+    "help_text": "Triggers when a new opportunity is added.", 
+    "noun": "", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.close.io/api/v1/opportunity/?_order_by=-date_updated&_limit=250", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": null, 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "confidence"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_won"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "dollars"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "lead_name"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "status"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "user_id"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "user_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "value"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "value_period"
+      }, 
+      {
+        "important": true, 
+        "type": "unicode", 
+        "key": "cents"
+      }
+    ], 
+    "fields": {
+      "status_label": {
+        "label": "Status (label)", 
+        "required": false, 
+        "help_text": "e.g.: Potential, Customer, Bad Fit", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type": "Unicode", 
+        "prefill": null
+      }, 
+      "status_id": {
+        "label": "Status ID", 
+        "required": false, 
+        "help_text": "The ID that Close.io assigned to a given status.\r\n\r\ne.g., \"stat_1ZdiZqcSIkoGVnNOyxiEY58eTGQmFNG3LPlEVQ4V7Nk\"", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type": "Unicode", 
+        "prefill": null
+      }, 
+      "status_type": {
+        "label": "Status Type", 
+        "required": false, 
+        "help_text": "Always one of: \"active\", \"won\", or \"lost\". Each status in Close.io has a status \"type\".", 
+        "default": null, 
+        "choices": "active,won,lost", 
+        "sort": null, 
+        "type": "Unicode", 
+        "prefill": null
+      }
+    }
+  }, 
+  "task": {
+    "label": "New Task", 
+    "help_text": "Triggers when a new task is created.", 
+    "noun": "", 
+    "important": true, 
+    "hide": false, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.close.io/api/v1/task/?_order_by=-date_created", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [
+      {
+        "type": "bool", 
+        "key": "has_more"
+      }
+    ], 
+    "fields": {}
+  }, 
+  "user": {
+    "label": "New User", 
+    "help_text": "Test trigger for accounts", 
+    "noun": "", 
+    "important": false, 
+    "hide": true, 
+    "data_source": "Polling", 
+    "resource_url": "https://app.close.io/api/v1/me/", 
+    "custom_fields_url": null, 
+    "hook_event": null, 
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.", 
+    "sample_result_fields": [], 
+    "fields": {}
+  }
+}
