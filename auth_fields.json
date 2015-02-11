@@ -1,0 +1,12 @@
+{
+  "api_key": {
+    "label": "API Key", 
+    "required": true, 
+    "help_text": "Found in Settings (top right drop down menu) under API Keys.", 
+    "default": null, 
+    "choices": null, 
+    "sort": null, 
+    "type": "Unicode", 
+    "input_format": null
+  }
+}
