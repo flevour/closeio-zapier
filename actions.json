@@ -86,7 +86,7 @@
         "send_in_json": true
       }, 
       "contact_phone": {
-        "label": "Phone", 
+        "label": "Contact Phone", 
         "required": false, 
         "help_text": "Phone number (including country code)", 
         "default": null, 
@@ -173,14 +173,25 @@
         "prefill": null, 
         "send_in_json": true
       }, 
-      "notes": {
-        "label": "Notes", 
+      "note": {
+        "label": "Note", 
         "required": false, 
-        "help_text": null, 
+        "help_text": "Add a note to this contact when you add it.", 
         "default": null, 
         "choices": null, 
         "sort": null, 
         "type_of": "Textarea", 
+        "prefill": null, 
+        "send_in_json": false
+      }, 
+      "contact_url": {
+        "label": "Contact URL", 
+        "required": false, 
+        "help_text": "The URL for the contact to be associated with this Lead.", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
       }
