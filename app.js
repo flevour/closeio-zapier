@@ -18,12 +18,21 @@ flatten_arrays = function(results) {
 };
 
 var Zap = {
+    new_opportunity_pre_write: function(bundle) {
+        var outbound = JSON.parse(bundle.request.data);
+        outbound.value = parseInt(parseFloat(outbound.value) * 100, 10);
+        bundle.request.data = JSON.stringify(outbound);
+        return bundle.request;
+    },
+
     task_pre_poll: function(bundle) {
         var request = bundle.request;
-        console.log(bundle.trigger_fields);
+        
         if ('is_complete' in bundle.trigger_fields) {
-            console.log('found is_complete');
             request.params.is_complete = bundle.trigger_fields.is_complete;
+        }
+        if ('user_id' in bundle.trigger_fields) {
+            request.params.user_id = bundle.trigger_fields.user_id;
         }
         
         return request;
@@ -68,14 +77,41 @@ var Zap = {
         if (bundle.trigger_fields.status_type) {
             request.params.status_type = bundle.trigger_fields.status_type;
         }
+        if ('user_id' in bundle.trigger_fields) {
+            request.params.user_id = bundle.trigger_fields.user_id;
+        }
+        if ('value_period' in bundle.trigger_fields) {
+            request.params.value_period = bundle.trigger_fields.value_period;
+        }
         return request;
     },
+    
+    get_lead_info: function(bundle) {
+        var lead_request = {
+          'method': 'GET',
+              'url': 'https://app.close.io/api/v1/lead/' + bundle.lead_id,
+              'params': {
+              },
+              'headers': {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              'auth': [bundle.auth_fields.api_key, '']
+        };
+        data  = JSON.parse(z.request(lead_request).content);
+        delete data.tasks;
+        delete data.opportunities;
+        delete data.contacts;
+        return data;
+    },
+
     opportunity_post_poll: function(bundle) {
         results = JSON.parse(bundle.response.content).data;
         _.each(results, function(result){
             cents = result.value;
             result.dollars = "$" + (Math.floor(cents / 100)) + "." + (cents % 100);
             result.cents = cents;
+            result.lead = z.dehydrate('get_lead_info', {lead_id: result.lead_id});
         });
         return flatten_arrays(results);
     },
@@ -200,6 +236,9 @@ var Zap = {
     },
     task_post_poll: function(bundle) {
         results = JSON.parse(bundle.response.content).data;
+        _.each(results, function(result){
+            result.lead = z.dehydrate('get_lead_info', {lead_id: result.lead_id});
+        });
         return results;
     }
 };
