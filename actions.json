@@ -25,7 +25,7 @@
         "help_text": "Lead/ Company / Organization ", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 1, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -36,7 +36,7 @@
         "help_text": null, 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 2, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -47,7 +47,7 @@
         "help_text": null, 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 3, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -58,7 +58,7 @@
         "help_text": null, 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 4, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -69,7 +69,7 @@
         "help_text": null, 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 5, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -80,7 +80,7 @@
         "help_text": "A description about the lead", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 6, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -91,7 +91,18 @@
         "help_text": "Phone number (including country code)", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 7, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "contact_url": {
+        "label": "Contact URL", 
+        "required": false, 
+        "help_text": "The URL for the contact to be associated with this Lead.", 
+        "default": null, 
+        "choices": null, 
+        "sort": 8, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -102,7 +113,7 @@
         "help_text": "Type of address", 
         "default": null, 
         "choices": "business,mailing,other", 
-        "sort": null, 
+        "sort": 9, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -113,7 +124,7 @@
         "help_text": "First part of the street address for an address (e.g., \"501 Forest Ave\")", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 10, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -124,7 +135,7 @@
         "help_text": "Second part of a street address if necessary (e.g., \"Suite 410\")", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 11, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -135,7 +146,7 @@
         "help_text": "City name for an address (e.g., \"Palo Alto\")", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 12, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -146,7 +157,7 @@
         "help_text": "State (abbreviation, if in the U.S.). E.g., \"CA\"", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 13, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -157,7 +168,7 @@
         "help_text": null, 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 14, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -168,7 +179,7 @@
         "help_text": "Country abbreviation for an address. E.g., \"US\"", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 15, 
         "type_of": "Unicode", 
         "prefill": null, 
         "send_in_json": true
@@ -179,19 +190,162 @@
         "help_text": "Add a note to this contact when you add it.", 
         "default": null, 
         "choices": null, 
-        "sort": null, 
+        "sort": 16, 
         "type_of": "Textarea", 
         "prefill": null, 
         "send_in_json": false
-      }, 
-      "contact_url": {
-        "label": "Contact URL", 
-        "required": false, 
-        "help_text": "The URL for the contact to be associated with this Lead.", 
+      }
+    }
+  }, 
+  "new_opportunity": {
+    "label": "New Opportunity", 
+    "help_text": "Creates a new opportunity.", 
+    "noun": "", 
+    "important": true, 
+    "hide": false, 
+    "resource_url": "https://app.close.io/api/v1/opportunity/", 
+    "custom_fields_url": null, 
+    "fields": {
+      "status_id": {
+        "label": "Status", 
+        "required": true, 
+        "help_text": "Lead status. Lead statuses must be setup in your Organization Settings first before they will show up in this drop-down.\n\n", 
         "default": null, 
         "choices": null, 
         "sort": null, 
         "type_of": "Unicode", 
+        "prefill": "opportunity_status.id.label", 
+        "send_in_json": true
+      }, 
+      "user_id": {
+        "label": "User", 
+        "required": false, 
+        "help_text": "Select the user to associate to this opportunity.  Defaults to your user account.", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": "all_users.user_id.user_full_name", 
+        "send_in_json": true
+      }, 
+      "value_period": {
+        "label": "Value Period", 
+        "required": false, 
+        "help_text": "Return only one time, monthly, or annual opportunities.", 
+        "default": null, 
+        "choices": "one_time|One Time,monthly|Monthly,annual|Annual", 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "lead_id": {
+        "label": "Lead", 
+        "required": true, 
+        "help_text": "Select the lead to assign this opportunity to. If you have access to the lead ID, use the advanced features at the bottom of the drop-down to input the ID one time, or dynamically via trigger variable.", 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Unicode", 
+        "prefill": "lead.id.display_name", 
+        "send_in_json": true
+      }, 
+      "note": {
+        "label": "Note", 
+        "required": false, 
+        "help_text": "Add a note to this opportunity when you add it.", 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "confidence": {
+        "label": "Confidence", 
+        "required": false, 
+        "help_text": "Set a percentage confidence level in this opportunity (between 0 and 100).", 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Integer", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "value": {
+        "label": "Value", 
+        "required": false, 
+        "help_text": "Set a value for this opportunity in dollars (i.e. 1000 or 49.99).", 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Integer", 
+        "prefill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "new_task": {
+    "label": "New Task", 
+    "help_text": "Creates a new Task.", 
+    "noun": "Task", 
+    "important": true, 
+    "hide": false, 
+    "resource_url": "https://app.close.io/api/v1/task/", 
+    "custom_fields_url": null, 
+    "fields": {
+      "user_id": {
+        "label": "User", 
+        "required": false, 
+        "help_text": "Select the user to assign this task to.  Defaults to your user account.", 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": "all_users.user_id.user_full_name", 
+        "send_in_json": true
+      }, 
+      "lead_id": {
+        "label": "Lead", 
+        "required": true, 
+        "help_text": "Select the lead to assign this opportunity to. If you have access to the lead ID, use the advanced features at the bottom of the drop-down to input the ID one time, or dynamically via trigger variable.", 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Unicode", 
+        "prefill": "lead.id.display_name", 
+        "send_in_json": true
+      }, 
+      "text": {
+        "label": "Text", 
+        "required": true, 
+        "help_text": "The text of this task.", 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "due_date": {
+        "label": "Due Date", 
+        "required": false, 
+        "help_text": "Set a due date for this task.", 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "DateTime", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "is_complete": {
+        "label": "Is Complete", 
+        "required": false, 
+        "help_text": "Set whether this task is complete.", 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Boolean", 
         "prefill": null, 
         "send_in_json": true
       }
