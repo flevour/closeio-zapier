@@ -1,7 +1,7 @@
 {
-  "title": "Close.io - 2/18 Beta", 
+  "title": "Close.io", 
   "description": "Close.io is built from the ground up to be more than just a CRM. It makes brings the communication loop directly into your leads management.", 
-  "image_url": "https://zapier.cachefly.net/storage/developer/c7a605baad258d085280f6c9332a83e2.png", 
+  "image_url": "https://zapier.cachefly.net/storage/developer/d7849f5da486662ee9a92216a07baf64.png", 
   "test_trigger_key": "user", 
   "auth_type": "Basic Auth", 
   "auth_mapping": {
@@ -9,5 +9,7 @@
     "password": ""
   }, 
   "subscribe_url": "", 
-  "unsubscribe_url": ""
+  "unsubscribe_url": "", 
+  "their_user_count": null, 
+  "homepage_url": null
 }
