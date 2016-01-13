@@ -1,352 +1,2528 @@
 {
   "new_lead": {
-    "label": "New Lead", 
+    "_dump_version": 1, 
+    "label": "New Lead (legacy)", 
     "help_text": "Creates a new lead.", 
     "noun": "", 
     "important": true, 
-    "hide": false, 
-    "resource_url": "https://app.close.io/api/v1/lead/", 
+    "hide": true, 
+    "url": "https://app.close.io/api/v1/lead/", 
     "custom_fields_url": "https://app.close.io/api/v1/custom_fields/lead/", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "addresses"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]address_1"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]address_2"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]city"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]country"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]state"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]zipcode"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]email"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]email_lower"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]phone"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]phone_formatted"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]title"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "description"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "display_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "html_url"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]confidence"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_won"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]user_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]user_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_currency"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_formatted"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_period"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "primary_email"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "primary_phone"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]assigned_to"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]assigned_to_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]contact_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]created_by_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]date"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]due_date"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]is_complete"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]is_dateless"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]object_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]object_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]text"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]updated_by_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]view"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "url"
+      }
+    ], 
     "fields": {
       "status": {
         "label": "Status", 
         "required": false, 
         "help_text": "Lead status. Lead statuses must be setup in your Organization Settings first before they will show up in this drop-down.\n\n", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": null, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": "lead_status.id.label", 
-        "send_in_json": true
-      }, 
-      "name": {
-        "label": "Company Name", 
-        "required": false, 
-        "help_text": "Lead/ Company / Organization ", 
-        "default": null, 
-        "choices": null, 
-        "sort": 1, 
-        "type_of": "Unicode", 
-        "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "contact_name": {
         "label": "Contact Name", 
         "required": false, 
         "help_text": null, 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 2, 
+        "sort": null, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
-        "send_in_json": true
-      }, 
-      "contact_email": {
-        "label": "Contact Email", 
-        "required": false, 
-        "help_text": null, 
-        "default": null, 
-        "choices": null, 
-        "sort": 3, 
-        "type_of": "Unicode", 
-        "prefill": null, 
-        "send_in_json": true
+        "searchfill": null, 
+        "send_in_json": false
       }, 
       "contact_title": {
         "label": "Contact Title", 
         "required": false, 
         "help_text": null, 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 4, 
+        "sort": null, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
-        "send_in_json": true
+        "searchfill": null, 
+        "send_in_json": false
       }, 
-      "url": {
-        "label": "URL", 
+      "name": {
+        "label": "Company Name", 
         "required": false, 
-        "help_text": null, 
+        "help_text": "Lead / Company / Organization", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 5, 
+        "sort": 1, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "description": {
         "label": "Description", 
         "required": false, 
         "help_text": "A description about the lead", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "url": {
+        "label": "URL", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_email": {
+        "label": "Contact Office Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 6, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
-      "contact_phone": {
-        "label": "Contact Phone", 
+      "contact_emails__direct": {
+        "label": "Contact Direct Email", 
         "required": false, 
-        "help_text": "Phone number (including country code)", 
+        "help_text": null, 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 7, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_emails__home": {
+        "label": "Contact Home Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 8, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_emails__other": {
+        "label": "Contact Other Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 9, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phone": {
+        "label": "Contact Office Phone", 
+        "required": false, 
+        "help_text": "Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 10, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phones__direct": {
+        "label": "Contact Direct Phone", 
+        "required": false, 
+        "help_text": "Direct Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 11, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phones__mobile": {
+        "label": "Contact Mobile Phone", 
+        "required": false, 
+        "help_text": "Mobile Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 12, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phones__home": {
+        "label": "Contact Home Phone", 
+        "required": false, 
+        "help_text": "Home Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 13, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phones__fax": {
+        "label": "Contact Fax Phone", 
+        "required": false, 
+        "help_text": "Fax Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 14, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phones__other": {
+        "label": "Contact Other Phone", 
+        "required": false, 
+        "help_text": "Other Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 15, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "contact_url": {
         "label": "Contact URL", 
         "required": false, 
         "help_text": "The URL for the contact to be associated with this Lead.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 8, 
+        "sort": 16, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "address_label": {
         "label": "Address Label", 
         "required": false, 
         "help_text": "Type of address", 
+        "placeholder": null, 
         "default": null, 
         "choices": "business,mailing,other", 
-        "sort": 9, 
+        "sort": 17, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "address_street_1": {
         "label": "Address Street 1", 
         "required": false, 
         "help_text": "First part of the street address for an address (e.g., \"501 Forest Ave\")", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 10, 
+        "sort": 18, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "address_street_2": {
         "label": "Address Street 2", 
         "required": false, 
         "help_text": "Second part of a street address if necessary (e.g., \"Suite 410\")", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 11, 
+        "sort": 19, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "address_city": {
         "label": "Address City", 
         "required": false, 
         "help_text": "City name for an address (e.g., \"Palo Alto\")", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 12, 
+        "sort": 20, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "address_state": {
         "label": "Address State", 
         "required": false, 
         "help_text": "State (abbreviation, if in the U.S.). E.g., \"CA\"", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 13, 
+        "sort": 21, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "address_zipcode": {
         "label": "Address ZIP Code", 
         "required": false, 
         "help_text": null, 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 14, 
+        "sort": 22, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "address_country": {
         "label": "Address Country", 
         "required": false, 
         "help_text": "Country abbreviation for an address. E.g., \"US\"", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 15, 
+        "sort": 23, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "note": {
         "label": "Note", 
         "required": false, 
         "help_text": "Add a note to this contact when you add it.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
-        "sort": 16, 
+        "sort": 24, 
         "type_of": "Textarea", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": false
+      }, 
+      "task__text": {
+        "label": "Task Text", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 25, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "task__date": {
+        "label": "Task Due Date", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 26, 
+        "type_of": "DateTime", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "task__assigned_to": {
+        "label": "Task Assignee", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 27, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": "all_users.user_id.user_full_name", 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "opportunity__note": {
+        "label": "Opportunity Note", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 28, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "opportunity__confidence": {
+        "label": "Opportunity confidence", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 29, 
+        "type_of": "Integer", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "opportunity__value": {
+        "label": "Opportunity Value", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 30, 
+        "type_of": "Integer", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "opportunity__value_period": {
+        "label": "Opportunity Value Period", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": "one_time|One-time,monthly|Monthly,yearly|Yearly", 
+        "sort": 31, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
       }
     }
   }, 
   "new_opportunity": {
+    "_dump_version": 1, 
     "label": "New Opportunity", 
     "help_text": "Creates a new opportunity.", 
     "noun": "", 
     "important": true, 
     "hide": false, 
-    "resource_url": "https://app.close.io/api/v1/opportunity/", 
+    "url": "https://app.close.io/api/v1/opportunity/", 
     "custom_fields_url": null, 
+    "sample_result_fields": [
+      {
+        "type": "int", 
+        "key": "confidence"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_won"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "user_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "user_name"
+      }, 
+      {
+        "type": "int", 
+        "key": "value"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "value_currency"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "value_formatted"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "value_period"
+      }
+    ], 
     "fields": {
       "status_id": {
         "label": "Status", 
         "required": true, 
         "help_text": "Lead status. Lead statuses must be setup in your Organization Settings first before they will show up in this drop-down.\n\n", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": null, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": "opportunity_status.id.label", 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "user_id": {
         "label": "User", 
         "required": false, 
         "help_text": "Select the user to associate to this opportunity.  Defaults to your user account.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": null, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": "all_users.user_id.user_full_name", 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "value_period": {
         "label": "Value Period", 
         "required": false, 
         "help_text": "Return only one time, monthly, or annual opportunities.", 
+        "placeholder": null, 
         "default": null, 
         "choices": "one_time|One Time,monthly|Monthly,annual|Annual", 
         "sort": null, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "lead_id": {
         "label": "Lead", 
         "required": true, 
         "help_text": "Select the lead to assign this opportunity to. If you have access to the lead ID, use the advanced features at the bottom of the drop-down to input the ID one time, or dynamically via trigger variable.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 16, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": "lead.id.display_name", 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "note": {
         "label": "Note", 
         "required": false, 
         "help_text": "Add a note to this opportunity when you add it.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 16, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "confidence": {
         "label": "Confidence", 
         "required": false, 
         "help_text": "Set a percentage confidence level in this opportunity (between 0 and 100).", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 16, 
         "type_of": "Integer", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "value": {
         "label": "Value", 
         "required": false, 
         "help_text": "Set a value for this opportunity in dollars (i.e. 1000 or 49.99).", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 16, 
         "type_of": "Integer", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }
     }
   }, 
   "new_task": {
+    "_dump_version": 1, 
     "label": "New Task", 
     "help_text": "Creates a new Task.", 
     "noun": "Task", 
     "important": true, 
     "hide": false, 
-    "resource_url": "https://app.close.io/api/v1/task/", 
+    "url": "https://app.close.io/api/v1/task/", 
     "custom_fields_url": null, 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "assigned_to"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "assigned_to_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "bool", 
+        "key": "is_complete"
+      }, 
+      {
+        "type": "bool", 
+        "key": "is_dateless"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "object_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "object_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "text"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by_name"
+      }
+    ], 
     "fields": {
       "user_id": {
-        "label": "User", 
+        "label": "Assigned To", 
         "required": false, 
         "help_text": "Select the user to assign this task to.  Defaults to your user account.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": null, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": "all_users.user_id.user_full_name", 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "lead_id": {
         "label": "Lead", 
         "required": true, 
         "help_text": "Select the lead to assign this opportunity to. If you have access to the lead ID, use the advanced features at the bottom of the drop-down to input the ID one time, or dynamically via trigger variable.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 16, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": "lead.id.display_name", 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "text": {
         "label": "Text", 
         "required": true, 
         "help_text": "The text of this task.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 16, 
         "type_of": "Unicode", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "due_date": {
         "label": "Due Date", 
         "required": false, 
         "help_text": "Set a due date for this task.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 16, 
         "type_of": "DateTime", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }, 
       "is_complete": {
         "label": "Is Complete", 
         "required": false, 
         "help_text": "Set whether this task is complete.", 
+        "placeholder": null, 
         "default": null, 
         "choices": null, 
         "sort": 16, 
         "type_of": "Boolean", 
+        "list": false, 
         "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "new_note": {
+    "_dump_version": 1, 
+    "label": "New Note", 
+    "help_text": "Creates a new note.", 
+    "noun": "Note", 
+    "important": true, 
+    "hide": false, 
+    "url": "https://app.close.io/api/v1/activity/note/", 
+    "custom_fields_url": null, 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "user_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "user_name"
+      }
+    ], 
+    "fields": {
+      "lead_id": {
+        "label": "Lead", 
+        "required": true, 
+        "help_text": "Select the lead to assign this note to. If you have access to the lead ID, use the advanced features at the bottom of the drop-down to input the ID one time, or dynamically via trigger variable.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": "lead.id.display_name", 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "note": {
+        "label": "Text", 
+        "required": true, 
+        "help_text": "The text of this note.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "new_call": {
+    "_dump_version": 1, 
+    "label": "New Call", 
+    "help_text": "Creates a new call.", 
+    "noun": "Call", 
+    "important": true, 
+    "hide": false, 
+    "url": "https://app.close.io/api/v1/activity/call/", 
+    "custom_fields_url": null, 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "direction"
+      }, 
+      {
+        "type": "int", 
+        "key": "duration"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "phone"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "recording_url"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "user_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "voicemail_duration"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "voicemail_url"
+      }
+    ], 
+    "fields": {
+      "lead_id": {
+        "label": "Lead", 
+        "required": true, 
+        "help_text": "Select the lead to assign this call to. If you have access to the lead ID, use the advanced features at the bottom of the drop-down to input the ID one time, or dynamically via trigger variable.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": "lead.id.display_name", 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "note": {
+        "label": "Text", 
+        "required": true, 
+        "help_text": "The text of this note.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_id": {
+        "label": "Contact ID", 
+        "required": false, 
+        "help_text": "Select the contact to assign this call to. If you have access to the contact ID, use the advanced features at the bottom of the drop-down to input the ID one time, or dynamically via trigger variable.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": "contact.id.name", 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "phone": {
+        "label": "Phone Number", 
+        "required": false, 
+        "help_text": "The phone number called for this call.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "direction": {
+        "label": "Direction", 
+        "required": false, 
+        "help_text": "Select whether the call was inbound or outbound.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": "outbound|Outbound,inbound|Inbound", 
+        "sort": 4, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "duration": {
+        "label": "Duration", 
+        "required": false, 
+        "help_text": "The duration of the call in seconds.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 5, 
+        "type_of": "Integer", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "recording_url": {
+        "label": "Recording URL", 
+        "required": false, 
+        "help_text": "An URL pointing to the MP3 recording of your call. For security reasons, we require the URL to be secure (i.e. starting with https://)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 6, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "new_contact": {
+    "_dump_version": 1, 
+    "label": "New Contact", 
+    "help_text": "Creates a new Contact.", 
+    "noun": "Contact", 
+    "important": true, 
+    "hide": false, 
+    "url": "https://app.close.io/api/v1/contact/", 
+    "custom_fields_url": null, 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "emails"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "emails[]email"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "emails[]email_lower"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "emails[]type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "phones"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "phones[]phone"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "phones[]phone_formatted"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "phones[]type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "title"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }
+    ], 
+    "fields": {
+      "lead_id": {
+        "label": "Lead", 
+        "required": true, 
+        "help_text": "Select the lead to assign this call to. If you have access to the lead ID, use the advanced features at the bottom of the drop-down to input the ID one time, or dynamically via trigger variable.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": "lead.id.display_name", 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "name": {
+        "label": "Name", 
+        "required": false, 
+        "help_text": "The name of this contact.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "title": {
+        "label": "Title", 
+        "required": false, 
+        "help_text": "The title of this contact.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "urls__url": {
+        "label": "URL", 
+        "required": false, 
+        "help_text": "An URL of this contact.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "phones__office": {
+        "label": "Office Phone", 
+        "required": false, 
+        "help_text": "Office Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 4, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "phones__mobile": {
+        "label": "Mobile Phone", 
+        "required": false, 
+        "help_text": "Mobile Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 5, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "phones__home": {
+        "label": "Home Phone", 
+        "required": false, 
+        "help_text": "Home Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 6, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "phones__direct": {
+        "label": "Direct Phone", 
+        "required": false, 
+        "help_text": "Direct Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 7, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "phones__fax": {
+        "label": "Fax Phone", 
+        "required": false, 
+        "help_text": "Fax Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 8, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "phones__other": {
+        "label": "Other Phone", 
+        "required": false, 
+        "help_text": "Other Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 9, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "emails__office": {
+        "label": "Office Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 10, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "emails__home": {
+        "label": "Home Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 11, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "emails__direct": {
+        "label": "Direct Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 12, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "emails__other": {
+        "label": "Other Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 13, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "new_lead_v2": {
+    "_dump_version": 1, 
+    "label": "New Lead", 
+    "help_text": "Creates a new lead (with line items support).", 
+    "noun": "", 
+    "important": true, 
+    "hide": false, 
+    "url": "https://app.close.io/api/v1/lead/", 
+    "custom_fields_url": "https://app.close.io/api/v1/custom_fields/lead/", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "addresses"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]address_1"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]address_2"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]city"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]country"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]state"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "addresses[]zipcode"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]email"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]email_lower"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]phone"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]phone_formatted"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]title"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "description"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "display_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "html_url"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]confidence"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_won"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]user_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]user_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_currency"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_formatted"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_period"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "primary_email"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "primary_phone"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]assigned_to"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]assigned_to_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]contact_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]created_by_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]date"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]due_date"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]is_complete"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]is_dateless"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]object_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]object_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]text"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]updated_by_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks[]view"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "url"
+      }
+    ], 
+    "fields": {
+      "name": {
+        "label": "Company Name", 
+        "required": false, 
+        "help_text": "Lead / Company / Organization", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "description": {
+        "label": "Description", 
+        "required": false, 
+        "help_text": "A description about the lead", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "url": {
+        "label": "URL", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "status": {
+        "label": "Status", 
+        "required": false, 
+        "help_text": "Lead status. Lead statuses must be setup in your Organization Settings first before they will show up in this drop-down.\n\n", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": "lead_status.id.label", 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_name": {
+        "label": "Contact Name", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 4, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": false
+      }, 
+      "contact_title": {
+        "label": "Contact Title", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 5, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": false
+      }, 
+      "contact_email_office": {
+        "label": "Contact Office Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 6, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_email_direct": {
+        "label": "Contact Direct Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 7, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_email_home": {
+        "label": "Contact Home Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 8, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_email_other": {
+        "label": "Contact Other Email", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 9, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phone_office": {
+        "label": "Contact Office Phone", 
+        "required": false, 
+        "help_text": "Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 10, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phone_direct": {
+        "label": "Contact Direct Phone", 
+        "required": false, 
+        "help_text": "Direct Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 11, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phone_mobile": {
+        "label": "Contact Mobile Phone", 
+        "required": false, 
+        "help_text": "Mobile Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 12, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phone_home": {
+        "label": "Contact Home Phone", 
+        "required": false, 
+        "help_text": "Home Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 13, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phone_fax": {
+        "label": "Contact Fax Phone", 
+        "required": false, 
+        "help_text": "Fax Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 14, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_phone_other": {
+        "label": "Contact Other Phone", 
+        "required": false, 
+        "help_text": "Other Phone number (including country code)", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 15, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "contact_url": {
+        "label": "Contact URL", 
+        "required": false, 
+        "help_text": "The URL for the contact to be associated with this Lead.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 16, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "address_label": {
+        "label": "Address Label", 
+        "required": false, 
+        "help_text": "Type of address", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": "business,mailing,other", 
+        "sort": 17, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "address_street_1": {
+        "label": "Address Street 1", 
+        "required": false, 
+        "help_text": "First part of the street address for an address (e.g., \"501 Forest Ave\")", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 18, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "address_street_2": {
+        "label": "Address Street 2", 
+        "required": false, 
+        "help_text": "Second part of a street address if necessary (e.g., \"Suite 410\")", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 19, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "address_city": {
+        "label": "Address City", 
+        "required": false, 
+        "help_text": "City name for an address (e.g., \"Palo Alto\")", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 20, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "address_state": {
+        "label": "Address State", 
+        "required": false, 
+        "help_text": "State (abbreviation, if in the U.S.). E.g., \"CA\"", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 21, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "address_zipcode": {
+        "label": "Address ZIP Code", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 22, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "address_country": {
+        "label": "Address Country", 
+        "required": false, 
+        "help_text": "Country abbreviation for an address. E.g., \"US\"", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 23, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "note": {
+        "label": "Text", 
+        "required": false, 
+        "help_text": "Add a note to this contact when you add it.", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 24, 
+        "type_of": "Textarea", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": false
+      }, 
+      "task_text": {
+        "label": "Task Text", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 25, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "task_date": {
+        "label": "Task Due Date", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 26, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "task_assigned_to": {
+        "label": "Task Assignee", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 27, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": "all_users.user_id.user_full_name", 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "opportunity_note": {
+        "label": "Opportunity Note", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 28, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "opportunity_confidence": {
+        "label": "Opportunity confidence", 
+        "required": false, 
+        "help_text": "Set a percentage confidence level in this opportunity (between 0 and 100).", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 29, 
+        "type_of": "Integer", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "opportunity_value": {
+        "label": "Opportunity Value", 
+        "required": false, 
+        "help_text": "Set a value for this opportunity in dollars (i.e. 1000 or 49.99).", 
+        "placeholder": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 30, 
+        "type_of": "Float", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
+        "send_in_json": true
+      }, 
+      "opportunity_value_period": {
+        "label": "Opportunity Value Period", 
+        "required": false, 
+        "help_text": null, 
+        "placeholder": null, 
+        "default": null, 
+        "choices": "one_time|One-time,monthly|Monthly,yearly|Yearly", 
+        "sort": 31, 
+        "type_of": "Unicode", 
+        "list": false, 
+        "prefill": null, 
+        "searchfill": null, 
         "send_in_json": true
       }
     }
