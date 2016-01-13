@@ -3,6 +3,7 @@
     "label": "API Key", 
     "required": true, 
     "help_text": "Found in Settings (top right drop down menu) under API Keys.", 
+    "placeholder": null, 
     "default": null, 
     "choices": null, 
     "sort": null, 
