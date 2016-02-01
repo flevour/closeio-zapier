@@ -403,7 +403,7 @@ var Zap = {
     new_lead_v2_post_custom_action_fields: function(bundle) {
         return Zap.new_lead_post_custom_action_fields(bundle);
     },
-
+    
     task_post_poll: add_dehydrated_lead,
     note_post_poll: add_dehydrated_lead,
     opportunity_status_change_post_poll: add_dehydrated_lead,
