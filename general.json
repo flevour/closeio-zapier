@@ -1,7 +1,7 @@
 {
-  "title": "Close.io dev", 
+  "title": "Close.io Cloned 2016-02-01", 
   "description": "Close.io is built from the ground up to be more than just a CRM. It makes brings the communication loop directly into your leads management.", 
-  "image_url": "https://zapier.cachefly.net/storage/developer/d7849f5da486662ee9a92216a07baf64_2.png", 
+  "image_url": "https://zapier.cachefly.net/storage/developer/d7849f5da486662ee9a92216a07baf64.png", 
   "test_trigger_key": "user", 
   "auth_type": "Basic Auth", 
   "auth_mapping": {
