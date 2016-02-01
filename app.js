@@ -212,23 +212,32 @@ var Zap = {
     },
     lead_post_poll: function(bundle) {
         var results = JSON.parse(bundle.response.content).data;
-        if (results && results.contacts){
-            if (results.contacts[0].emails)
-                results.primary_email = results.contacts[0].emails[0].email;
-            if (results.contacts[0].phones)
-                results.primary_phone = results.contacts[0].phones[0].phone;
-        }
+        _.each(results, function(lead) {
+            if (lead.contacts && lead.contacts.length) {
+                if (lead.contacts[0].emails && lead.contacts[0].emails[0]) {
+                    lead.primary_email = lead.contacts[0].emails[0].email;
+                }
+                if (lead.contacts[0].phones && lead.contacts[0].phones[0]) {
+                    lead.primary_phone = lead.contacts[0].phones[0].phone;
+                }
+            }
+        });
         results = flatten_arrays(results);
         return results;
     },
     lead_v2_post_poll: function(bundle) {
         var results = JSON.parse(bundle.response.content).data;
-        if (results && results.contacts){
-            if (results.contacts[0].emails)
-                results.primary_email = results.contacts[0].emails[0].email;
-            if (results.contacts[0].phones)
-                results.primary_phone = results.contacts[0].phones[0].phone;
-        }
+        _.each(results, function(lead) {
+            if (lead.contacts && lead.contacts.length) {
+                if (lead.contacts[0].emails && lead.contacts[0].emails[0]) {
+                    lead.primary_email = lead.contacts[0].emails[0].email;
+                }
+                if (lead.contacts[0].phones && lead.contacts[0].phones[0]) {
+                    lead.primary_phone = lead.contacts[0].phones[0].phone;
+                }
+            }
+        });
+        results = flatten_arrays(results);
         return results;
     },
     new_lead_pre_write: function(bundle) {
