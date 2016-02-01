@@ -381,7 +381,7 @@
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
-        "send_in_json": false
+        "send_in_json": true
       }, 
       "contact_title": {
         "label": "Contact Title", 
@@ -395,7 +395,7 @@
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
-        "send_in_json": false
+        "send_in_json": true
       }, 
       "name": {
         "label": "Company Name", 
@@ -703,7 +703,7 @@
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
-        "send_in_json": false
+        "send_in_json": true
       }, 
       "task__text": {
         "label": "Task Text", 
