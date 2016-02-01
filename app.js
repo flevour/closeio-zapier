@@ -61,6 +61,14 @@ var remove_prefix_from_keys = function(data, prefix) {
     });
 };
 
+var add_dehydrated_lead = function(bundle) {
+    var results = JSON.parse(bundle.response.content).data;
+    _.each(results, function(result){
+        result.lead = z.dehydrate('get_lead_info', {lead_id: result.lead_id});
+    });
+    return results;
+};
+
 var Zap = {
     new_task_pre_write: function(bundle) {
         var data = JSON.parse(bundle.request.data);
@@ -395,13 +403,14 @@ var Zap = {
     new_lead_v2_post_custom_action_fields: function(bundle) {
         return Zap.new_lead_post_custom_action_fields(bundle);
     },
-    task_post_poll: function(bundle) {
-        var results = JSON.parse(bundle.response.content).data;
-        _.each(results, function(result){
-            result.lead = z.dehydrate('get_lead_info', {lead_id: result.lead_id});
-        });
-        return results;
-    },
+
+    task_post_poll: add_dehydrated_lead,
+    note_post_poll: add_dehydrated_lead,
+    opportunity_status_change_post_poll: add_dehydrated_lead,
+    email_post_poll: add_dehydrated_lead,
+    call_post_poll: add_dehydrated_lead,
+    lead_status_change_post_poll: add_dehydrated_lead,
+    
     new_contact_pre_write: function(bundle) {
         var data = JSON.parse(bundle.request.data);
 
