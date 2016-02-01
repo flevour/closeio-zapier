@@ -8,352 +8,7 @@
     "hide": true, 
     "url": "https://app.close.io/api/v1/lead/", 
     "custom_fields_url": "https://app.close.io/api/v1/custom_fields/lead/", 
-    "sample_result_fields": [
-      {
-        "type": "unicode", 
-        "key": "addresses"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]address_1"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]address_2"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]city"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]country"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]label"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]state"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]zipcode"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]emails"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]emails[]email"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]emails[]email_lower"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]emails[]type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]phones"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]phones[]phone"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]phones[]phone_formatted"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]phones[]type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]title"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "description"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "display_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "html_url"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]confidence"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]contact_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]date_won"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]lead_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]lead_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]note"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]status_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]status_label"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]status_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]user_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]user_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]value"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]value_currency"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]value_formatted"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]value_period"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "primary_email"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "primary_phone"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "status_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "status_label"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]assigned_to"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]assigned_to_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]contact_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]contact_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]created_by_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]date"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]due_date"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]is_complete"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]is_dateless"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]lead_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]lead_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]object_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]object_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]text"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]updated_by_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]view"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "url"
-      }
-    ], 
+    "sample_result_fields": [], 
     "fields": {
       "status": {
         "label": "Status", 
@@ -699,7 +354,7 @@
         "default": null, 
         "choices": null, 
         "sort": 24, 
-        "type_of": "Textarea", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -727,7 +382,7 @@
         "default": null, 
         "choices": null, 
         "sort": 26, 
-        "type_of": "DateTime", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -769,7 +424,7 @@
         "default": null, 
         "choices": null, 
         "sort": 29, 
-        "type_of": "Integer", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -783,7 +438,7 @@
         "default": null, 
         "choices": null, 
         "sort": 30, 
-        "type_of": "Integer", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -814,92 +469,7 @@
     "hide": false, 
     "url": "https://app.close.io/api/v1/opportunity/", 
     "custom_fields_url": null, 
-    "sample_result_fields": [
-      {
-        "type": "int", 
-        "key": "confidence"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contact_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_won"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "lead_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "lead_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "note"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "status_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "status_label"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "status_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "user_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "user_name"
-      }, 
-      {
-        "type": "int", 
-        "key": "value"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "value_currency"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "value_formatted"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "value_period"
-      }
-    ], 
+    "sample_result_fields": [], 
     "fields": {
       "status_id": {
         "label": "Status", 
@@ -979,7 +549,7 @@
         "default": null, 
         "choices": null, 
         "sort": 16, 
-        "type_of": "Integer", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -993,7 +563,7 @@
         "default": null, 
         "choices": null, 
         "sort": 16, 
-        "type_of": "Integer", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -1010,92 +580,7 @@
     "hide": false, 
     "url": "https://app.close.io/api/v1/task/", 
     "custom_fields_url": null, 
-    "sample_result_fields": [
-      {
-        "type": "unicode", 
-        "key": "_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "assigned_to"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "assigned_to_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contact_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contact_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "created_by_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "id"
-      }, 
-      {
-        "type": "bool", 
-        "key": "is_complete"
-      }, 
-      {
-        "type": "bool", 
-        "key": "is_dateless"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "lead_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "lead_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "object_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "object_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "text"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by_name"
-      }
-    ], 
+    "sample_result_fields": [], 
     "fields": {
       "user_id": {
         "label": "Assigned To", 
@@ -1147,7 +632,7 @@
         "default": null, 
         "choices": null, 
         "sort": 16, 
-        "type_of": "DateTime", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -1161,7 +646,7 @@
         "default": null, 
         "choices": null, 
         "sort": 16, 
-        "type_of": "Boolean", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -1178,64 +663,7 @@
     "hide": false, 
     "url": "https://app.close.io/api/v1/activity/note/", 
     "custom_fields_url": null, 
-    "sample_result_fields": [
-      {
-        "type": "unicode", 
-        "key": "_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contact_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "created_by_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "lead_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "note"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "user_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "user_name"
-      }
-    ], 
+    "sample_result_fields": [], 
     "fields": {
       "lead_id": {
         "label": "Lead", 
@@ -1276,76 +704,7 @@
     "hide": false, 
     "url": "https://app.close.io/api/v1/activity/call/", 
     "custom_fields_url": null, 
-    "sample_result_fields": [
-      {
-        "type": "unicode", 
-        "key": "_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contact_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "direction"
-      }, 
-      {
-        "type": "int", 
-        "key": "duration"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "lead_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "note"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "phone"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "recording_url"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "user_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "voicemail_duration"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "voicemail_url"
-      }
-    ], 
+    "sample_result_fields": [], 
     "fields": {
       "lead_id": {
         "label": "Lead", 
@@ -1425,7 +784,7 @@
         "default": null, 
         "choices": null, 
         "sort": 5, 
-        "type_of": "Integer", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -1456,72 +815,7 @@
     "hide": false, 
     "url": "https://app.close.io/api/v1/contact/", 
     "custom_fields_url": null, 
-    "sample_result_fields": [
-      {
-        "type": "unicode", 
-        "key": "created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "emails"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "emails[]email"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "emails[]email_lower"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "emails[]type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "phones"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "phones[]phone"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "phones[]phone_formatted"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "phones[]type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "title"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by"
-      }
-    ], 
+    "sample_result_fields": [], 
     "fields": {
       "lead_id": {
         "label": "Lead", 
@@ -1730,352 +1024,7 @@
     "hide": false, 
     "url": "https://app.close.io/api/v1/lead/", 
     "custom_fields_url": "https://app.close.io/api/v1/custom_fields/lead/", 
-    "sample_result_fields": [
-      {
-        "type": "unicode", 
-        "key": "addresses"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]address_1"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]address_2"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]city"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]country"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]label"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]state"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "addresses[]zipcode"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]emails"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]emails[]email"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]emails[]email_lower"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]emails[]type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]phones"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]phones[]phone"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]phones[]phone_formatted"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]phones[]type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]title"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "contacts[]updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "description"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "display_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "html_url"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]confidence"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]contact_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]date_won"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]lead_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]lead_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]note"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]status_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]status_label"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]status_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]user_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]user_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]value"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]value_currency"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]value_formatted"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "opportunities[]value_period"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "primary_email"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "primary_phone"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "status_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "status_label"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]assigned_to"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]assigned_to_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]contact_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]contact_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]created_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]created_by_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]date"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]date_created"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]date_updated"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]due_date"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]is_complete"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]is_dateless"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]lead_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]lead_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]object_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]object_type"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]organization_id"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]text"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]updated_by_name"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "tasks[]view"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "updated_by"
-      }, 
-      {
-        "type": "unicode", 
-        "key": "url"
-      }
-    ], 
+    "sample_result_fields": [], 
     "fields": {
       "name": {
         "label": "Company Name", 
@@ -2421,7 +1370,7 @@
         "default": null, 
         "choices": null, 
         "sort": 24, 
-        "type_of": "Textarea", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -2491,7 +1440,7 @@
         "default": null, 
         "choices": null, 
         "sort": 29, 
-        "type_of": "Integer", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
@@ -2505,7 +1454,7 @@
         "default": null, 
         "choices": null, 
         "sort": 30, 
-        "type_of": "Float", 
+        "type_of": "Unicode", 
         "list": false, 
         "prefill": null, 
         "searchfill": null, 
