@@ -10,8 +10,225 @@
     "custom_fields_url": null, 
     "resource_url": "https://app.close.io/api/v1/lead/{{id}}/", 
     "action_pair_label": "Find or Create Lead", 
-    "action_pair_key": null, 
-    "sample_result_fields": [], 
+    "action_pair_key": "new_lead_v2", 
+    "sample_result_fields": [
+      {
+        "type": "unicode", 
+        "key": "addresses"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]email"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]email_lower"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]emails[]type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]phone"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]phone_formatted"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]phones[]type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]title"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "contacts[]updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "description"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "display_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "html_url"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]confidence"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]contact_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]created_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_created"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_updated"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]date_won"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]lead_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]lead_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]note"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]status_type"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]user_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]user_name"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_currency"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_formatted"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "opportunities[]value_period"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "organization_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_id"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "status_label"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "tasks"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "updated_by"
+      }, 
+      {
+        "type": "unicode", 
+        "key": "url"
+      }
+    ], 
     "fields": {
       "name": {
         "label": "Company name", 
